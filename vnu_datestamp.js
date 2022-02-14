@@ -30,7 +30,7 @@ function renderDate(){
 		hours = 12;
 	if (minutes <= 9)
 		minutes = "0" + minutes;
-	document.writeln("<FONT COLOR=\"#000000\" FACE=\"Verdana,arial,helvetica,sans serif\" size=\"1\"><B>&nbsp;",days[day],""," ",months[month]," ",daym,""," ",year,"</B> | ",hours,":",minutes," ",dn,"</FONT><BR>");
+	document.writeln("<FONT COLOR=\"#000000\" FACE=\"Verdana,arial,helvetica,sans serif\" size=\"1\"><B>&nbsp;",days[day]," ",months[month]," ",daym," ",year,"</B> | ",hours,":",minutes," ",dn,"</FONT><BR>");
 }
 
 renderDate();
