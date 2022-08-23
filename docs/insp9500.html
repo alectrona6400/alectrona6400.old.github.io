@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+<meta name="description" content="DURANDAL" />
+<meta name="keywords" content="_your,keywords,goes,here_" />
+<meta name="author" content="k24net / Original design: Andreas Viklund - http://andreasviklund.com/" />
+<style type="text/css">@import url(../andreas04.css);</style>
+<title>k24net - inspiron 9500 project</title>
+</head>
+<!-- codename durandal import from old site -->
+<body>
+<div id="container">
+<div id="sitetitle">
+<h1><a href="../index.html">k24net</a></h1>
+<h2>dude im frankenstein</h2>
+</div>
+
+<div id="menu">
+<a href="../files.html">files</a>
+<a href="../art.html">art</a>
+<a href="../docs.html">docs</a>
+<a href="../blog.html">blog</a>
+<a href="../tech.html">tech</a>
+<a href="../about.html">about</a>
+</div>
+
+<div id="content">
+<h2 style="font-size:300%">Dell Inspiron "9500" Project</h2>
+<p class="intro"><i>Originally written August 10, 2022. Revised August 23, 2022.</i></p>
+<p class="intro"></p>
+	  <p>Upgrading a platform from 2 Pentium Ms duct-taped to a fully-packed 64-bit Core 2 system. On one of the GOAT laptops.</p>
+      <h2>What gave me this idea and why?</h2>
+      <p>The main idea: giving this computer a second chance.</p>
+	  <p>However, it was really more than just that. In my early days as a toddler, I grew up with an Inspiron 1501 laptop (which still exists, albeit unused and still has my parents' stuff on it) and the silver and white design resonated with me in a way more than the M6300 or M90 designs, because the inspiron design was the one I grew up with as a kid. I thought it would be a cool idea to configure a top-of-the-line system that runs on the best platform possible, and still looked like a childhood memory of mine. I don't hate the black and gray design of the M6300 and the M90, but I have more of a soft spot for the white and silver Inspiron design from the time.</p>
+	  <p>Next reason... the Inspiron 1720 is not exactly as well-configurable as the E1705 or 9400. Your only options were an Intel GMA 965, a GeForce 8400M GS, and an 8600M GT. Whereas you could get a GMA 950, a Radeon X1400, or at best, a GeForce 7900 GTX. Pretty depressing letdown, huh? Yes. The M6300 luckily has some options, a Quadro FX 1600M, and the more elusive Quadro FX 3600M. The M90 also came with an FX 1500M, FX 2500M (which you can find on eBay new old stock for cheap, luckily), or FX 3500M. The XPS M1730 is elusive, expensive, and conspicuous as hell. I don't really care unless I find one for dirt cheap, which I'm sure won't happen any time soon! Those have the 8700M or 8800M cards if I'm correct. I will admit, it was a pain in the ass to find an FX 3600M. I had to buy another M6300 just to find one...</p>
+	  <p>And last, but not least... I was bored. Very bored.</p>
+      <h2>What you will need</h2>
+      <p>First things first, you'll need more than your average amount of sanity. It's not easy to do completely pointless projects like this. The more important things you will need are...</p>
+	  <p>-A Dell Inspiron 9400 or E1705. A 9300 or 9200 may work with this project, but I have no clue. It most likely won't.<br>
+	  -A Dell Precision M6300. More specifically, you will need the base, heatsink, motherboard (obviously), and a Socket P processor. Make sure you have both a Merom and a Penryn CPU in case you need to update the BIOS.<br>
+	  <b>You may also use the M6300 antenna wiring so you can connect all 3 antenna bands to a card like the Intel PRO/Wireless 4965AGN. The 3-button touchpad from the M6300 can also be installed, but it'll stick out like a sore thumb to a few.</b><br>
+	  -Some thermal paste.<br>
+	  -A graphics card for your system. You can use any card from the Precision M6300 or M90. If you don't have one, buy a Quadro FX 2500M off of eBay. It'll be good enough until you decide to try tracking down an FX 3600M or a working FX 1600M. No, these don't take PCIe cards, these have a proprietary implementation. I know, it sucks.<br>
+	  -A fresh, sharp razor blade or dremel to cut obstructing plastic on the palmrest. Yes, they actually did change something with the M6300 even if it looks the same as its predecessor.<br>
+	  -A #0 or #1 phillips screw driver. You will also need a T8 torx screwdriver to repaste the graphics chip on the graphics daughtercard. <b>If you use the factory thermal paste, I will point and laugh at you.</b><br></p>
+	  <p>Once you have everything, proceed. If you screw something up, it's your fault and not mine.</p>
+      <h2>Swapping the case</h2>
+      <p>First, you need to take apart the computer. Service manuals are your friend for this one. You will also need to take apart the M6300 donor if you got a full unit. If you got M6300 parts, swap the parts from your old bottom case onto your new one. Don't worry about the subwoofer - the M6300 ditched it. Make sure you got an M6300 heatsink, because the 9400 one won't work.</p>
+	  <p>For those who do have full units, you can swap on a 9400 or E1705 palmrest with the LCD. However, there are some modifications to the palmrest that you will need to make. <a href="pictures/cutpoints-9500mod.png">Here is what to cut off of the palmrest.</a> If there are obstructions I missed, you can cut off the ones you can identify. Don't worry, the laptop's structure will not be severely changed! It may change a bit but it should not feel notably worse if you did everything right.</p>
+	  <p>Second, and I'm making this required because these computers are at least 15 or 14 years old... repaste your CPU and graphics card. Again, you don't want me to point and laugh at you, right? It's also <b>very</b> important for the GPU, because if you didn't know, nVidia cards from the mid-late 2000s die like flies. Luckily, the FX 3600M isn't really failure-prone because it's on the G92 core and runs on a 65nm manufacturing node, but you would still repaste the card regardless of if it's unreliable or not. <b>Some cards from the Inspiron 9400 and the E1705 may not work, like the Radeon X1400. I would recommend buying a Quadro FX 2500M if your M6300's donor card is dead.</b></p>
+	  <p>After you're done cutting up those palmrest obstructions and repasting your system, you can simply just put the machine together as normal. If you need to update the BIOS, you can put the M6300 palmrest on and start the computer with an external monitor, keyboard, and mouse if you have those to spare, and start Windows. Unfortunately, Dell bombed some of their BIOS executables so <a href="files/M6300A15_WORKING.EXE">download this for your M6300; it is the original release of A15 that Dell had on their website until June 4th, 2020.</a></p>
+      <h2>Pros and cons</h2>
+      <p>If you got this far, congrats! You've just completed the Inspiron 9500 mod. I have put together a list of pros and cons:</p>
+	  <h3>Pros</h3>
+      <p>-True AHCI support for SATA drives<br>
+	  -Flash Cache Module support (if you even care, it's basically Intel's first attempt at something like Optane)<br>
+	  -All 800MHz FSB Socket P processors are supported, which can allow upgrades up to an Intel Core 2 Duo T9500* providing better performance and instruction sets<br>
+	  -If you have a working M6300 graphics card like the 1600M or 3600M, you get DirectX 10 support and H.264 hardware decoding/encoding, which can help with YouTube playback with h264ify installed<br>
+	  -A maximum memory limit of 8GB, compared to the """4GB""" aka 3.37GB you got with the Socket M platform<br>
+	  -Increased memory and all-around data bandwidth from the Intel 965 series of chipsets<br>
+	  -All-around better computational performance and graphics performance, if using an FX 1600M or 3600M; CUDA support is also present on the M6300 cards<br>
+	  -QuickSnap covers will work again!<br></p>
+	  <p style="font-size:80%">*-An FSB mod to 1066MHz is possible, but very difficult and potentially damaging if you don't know what to do. I may try this again myself and see how far I'll get, but last time I damaged a board doing this.</p>
+	  <h3>Cons</h3>
+	  <p>-If you're not careful with modifying the palmrest, you may end up damaging it.<br>
+	  -The FX 1600M is the most failure-prone card in the M6300. You would be lucky to find a later unit or one with a revised chip.<br>
+	  -Some old precision aficionados may point and laugh at you. Hey, at least it's not the ThinkPad community, where they will point and laugh at you for having a dell in the first place!<br>
+	  -You may have to fix your windows installation from a 945-based system because you'll be using AHCI.<br>
+	  -None that I can think of anymore, this is a great upgrade.<br></p>
+      <h2>Conclusion</h2>
+	  <p>Is it possible? Yes! Is it the best financial choice if you have to buy everything yourself? Depends on what you think. Is it worth it? Absolutely, if you love the 9400's design! I think this is it for how far you can upgrade the ol' reliable. These mid-2000s Inspirons have to be one of the greatest laptops of all time; they have great options for graphics cards and have used the full potential of their mobile platforms. Yes, I hear you ThinkPad die-hards, they don't have a trackpoint... but at least you could get a workout lugging these around. Better yet, try replacing the dying nVidia card in your 14" 4:3 T61! For these, it's as simple as swapping a card.</p>
+	  <p>Luckily, parts for these laptops are also cheap! WUXGA panels are not very costly for these laptops, and Dell parts are all over the second-hand market. You could find new old stock parts for almost anything, unless it's an OEM battery. Hell, I even saw some Dell Venue Pro phones being sold as new old stock... until someone bought the rest. Oh well, it's a windows phone. It's quite literally a paperweight, and too insignificant in our time to be considered a museum piece. Back to what I was saying, you don't need to spend an arm and a leg on parts. Because, dude... YOU'VE GOT A DELL!</p>
+	  <a href="pictures/hwinfo64-9500.jpg">Photo of my 9500 unit. Yes, it has a JIS keyboard.</a>
+</div>
+<div id="footer">
+<h2 class="hide">Site info</h2>
+<img src="../images/globebottom.gif"><br>
+      &copy; 2022 k24a1 | Design by Andreas 
+      Viklund</a> | version 2.0 <br>
+	  this website is best displayed on internet explorer 6.0 with service pack 2 or later, however you shouldn't be using ie6.<br>
+	  minimum ideal screen resolution is 800x600. that wasn't easy to make it work well, either.</div>
+  </div>
+</body>
+</html>
